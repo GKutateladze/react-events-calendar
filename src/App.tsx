@@ -20,7 +20,7 @@ function App() {
   ));
 
   return (
-    <div>
+    <div className='App'>
       <h1>Event Calendar</h1>
       <EventForm/>
       {eventsJSX}
