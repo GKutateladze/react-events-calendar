@@ -9,5 +9,22 @@
   align-items: baseline;
   justify-content: space-between;
 
-  margin-bottom: 20px;
+  font-size: 16px;
+  width: 220px;
+  margin: 2px 3px;
+}
+
+.event-card__info {
+  display: flex;
+  align-items: center;
+}
+
+.event-card__title {
+  font-weight: bold;
+  margin-right: 8px;
+  width: 60px;
+}
+
+.event-card__time-label {
+  margin-right: 3px;
 }

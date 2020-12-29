@@ -7,5 +7,8 @@ export interface IEventBase {
 
 export interface IEvent extends IEventBase {
   _id: string;
+  row?: number;
+  startPoint?: string;
+  endPoint?: string;
 }
 

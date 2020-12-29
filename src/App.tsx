@@ -2,14 +2,15 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getEventsPending } from './_store/actions/events.actions';
-import { IStore } from './_store';
 import EventCard from './components/atoms/EventCard';
 import { IEvent } from './_store/types/events.types';
 import EventForm from './components/atoms/EventForm';
+import EventsCalendar from './components/organisms/EventsCalendar';
+import { eventsSelector } from './_store/selectors/events.selectors';
 
 function App() {
   const dispatch = useDispatch();
-  const events = useSelector((store: IStore) => store.events.collection);
+  const events = useSelector(eventsSelector);
 
   useEffect(() => {
     dispatch(getEventsPending())
@@ -21,9 +22,13 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Event Calendar</h1>
-      <EventForm/>
-      {eventsJSX}
+      <div className="align-container">
+        <EventForm/>
+        <div className="event-container">
+          {eventsJSX}
+        </div>
+      </div>
+      <EventsCalendar events={events}/>
     </div>
   );
 }

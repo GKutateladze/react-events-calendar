@@ -25,6 +25,7 @@
     "redux-actions-ts": "^0.1.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-observable": "^1.2.0",
+    "reselect": "^4.0.0",
     "rxjs": "^6.6.3",
     "ts-node": "^9.1.1",
     "typescript": "^4.0.3",

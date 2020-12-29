@@ -19,8 +19,8 @@ const EventForm = () => {
     const randomEvent: IEventBase = {
       title: `Event ${Math.floor(Math.random() * 100)}`,
       description: 'Reel reel good event',
-      from: `2020-12-01T${appendZero(from)}:00:00+03:00`,
-      to: `2020-12-01T${appendZero(to)}:00:00+03:00`
+      from: `2020-12-29T${appendZero(from)}:00:00+03:00`,
+      to: `2020-12-29T${appendZero(to)}:00:00+03:00`
     }
     dispatch(postEventsPending(randomEvent));
   }

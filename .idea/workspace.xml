@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f9e714-8a06-43c4-9b8a-be9baf3ef47d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_store/selectors/events.selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_store/types/events.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/types/events.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609260796985</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Static">
+      <created>1609261096110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609261096110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,17 +106,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Static" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1609260796836">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1609261095959">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="297" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609260796836" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609260798403">
+    <state x="297" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609261095959" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609261097809">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609260798403" />
-    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1609259853921">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609261097809" />
+    <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609266822105">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1609259853921" />
+    <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1609266822105" />
+    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1609267919464">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1609267919464" />
   </component>
 </project>
