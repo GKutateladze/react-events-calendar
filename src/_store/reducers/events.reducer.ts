@@ -15,9 +15,9 @@ const eventsReducer = handleTypedActions(
   [
     /** Get Events */
     createTypedHandler(GetEventsSuccess, (state: IEventsState, action: Action<IEvent[]>): IEventsState => {
-
       return {
       ...state,
+        collection: action.payload
       };
     }),
   ],

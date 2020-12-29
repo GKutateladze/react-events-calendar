@@ -6,5 +6,5 @@ import { IEvent } from '../types/events.types';
 
 /** Get Events */
 export const GetEvents = (): Observable<IEvent[]> => {
-  return Axios.get(`localhost:400/events`).pipe(map(({ data }: AxiosResponse<IEvent[]>) => data));
+  return Axios.get(`http://localhost:4000/events`).pipe(map(({ data }: AxiosResponse<IEvent[]>) => data));
 };
