@@ -7,3 +7,7 @@ export const getEventsSuccess = createTypedAction<IEvent[]>('[Success] Get Event
 
 export const postEventsPending = createTypedAction<IEventBase>('[Pending] Post Events');
 export const postEventsSuccess = createTypedAction<IEvent>('[Success] Post Events');
+
+
+export const deleteEventsPending = createTypedAction<string>('[Pending] Delete Events');
+export const deleteEventsSuccess = createTypedAction<string>('[Success] Delete Events');

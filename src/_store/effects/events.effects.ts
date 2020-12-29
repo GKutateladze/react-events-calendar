@@ -3,8 +3,8 @@ import { catchError, map, switchMap } from 'rxjs/operators';
 import { Action } from 'redux-actions';
 import { showErrorMessage } from '../_commonActions/error.actions';
 import { IEvent, IEventBase } from '../types/events.types';
-import { getEvents, postEvents } from '../services/events.services';
-import { getEventsPending, getEventsSuccess, postEventsPending, postEventsSuccess } from '../actions/events.actions';
+import { getEvents, postEvents, deleteEvents } from '../services/events.services';
+import { getEventsPending, getEventsSuccess, postEventsPending, postEventsSuccess, deleteEventsPending, deleteEventsSuccess } from '../actions/events.actions';
 
 /** Get Events */
 export const getEventsEffect$ = (actions$: ActionsObservable<Action<void>>) =>
@@ -26,6 +26,19 @@ export const postEventsEffect$ = (actions$: ActionsObservable<Action<IEventBase>
     switchMap(({ payload }) =>
       postEvents(payload).pipe(
         map((result: IEvent) => postEventsSuccess(result)),
+        catchError(showErrorMessage)
+      )
+    )
+  );
+
+
+/** Delete Events */
+export const deleteEventsEffect$ = (actions$: ActionsObservable<Action<string>>) =>
+  actions$.pipe(
+    ofType(deleteEventsPending.toString()),
+    switchMap(({ payload }) =>
+      deleteEvents(payload).pipe(
+        map(() => deleteEventsSuccess(payload)),
         catchError(showErrorMessage)
       )
     )

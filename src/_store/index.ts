@@ -1,13 +1,13 @@
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { getEventsEffect$, postEventsEffect$ } from './effects/events.effects';
-import eventsReducer, { IEventBasesState } from './reducers/events.reducer';
+import { getEventsEffect$, postEventsEffect$, deleteEventsEffect$ } from './effects/events.effects';
+import eventsReducer, { IEventState } from './reducers/events.reducer';
 
 /*[imports:end] */
 
 export interface IStore {
-  events: IEventBasesState;
+  events: IEventState;
 
   /*[types:end] */
 }
@@ -29,6 +29,7 @@ export const store = createStore(reducers, composeWithDevTools(applyMiddleware(o
 observableMiddleware.run(combineEpics(
   getEventsEffect$,
   postEventsEffect$,
+  deleteEventsEffect$,
 
   /*[effects:end] */
   )

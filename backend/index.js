@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { getEvents, postEvents } = require('./controllers/events');
+const { getEvents, postEvents, deleteEvents } = require('./controllers/events');
 
 const app = express();
 app.use(cors());
@@ -22,3 +22,5 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.get('/events', getEvents);
 
 app.post('/events', postEvents);
+
+app.delete('/events', deleteEvents);

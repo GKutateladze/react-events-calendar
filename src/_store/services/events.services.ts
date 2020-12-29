@@ -14,3 +14,9 @@ export const getEvents = (): Observable<IEvent[]> => {
 export const postEvents = (payload: IEventBase): Observable<IEvent> => {
   return Axios.post(`http://localhost:4000/events`, payload).pipe(map(({ data }: AxiosResponse<IEvent>) => data));
 };
+
+
+/** Delete Events */
+export const deleteEvents = (payload: string): Observable<string> => {
+  return Axios.delete(`http://localhost:4000/events`, { data: { id: payload } }).pipe(map(({ data }: AxiosResponse<string>) => data));
+};

@@ -1,26 +1,37 @@
 import React from 'react';
 import './EventCard.css';
-import { IEventBase } from '../../../_store/types/events.types';
+import { IEvent } from '../../../_store/types/events.types';
 import moment from 'moment';
+import { useDispatch } from 'react-redux';
+import { deleteEventsPending } from '../../../_store/actions/events.actions';
 
 
 interface IProps {
-    event: IEventBase
+    event: IEvent
 }
 
 const EventCard: React.FC<IProps> = ({event}: IProps) => {
 
+  const dispatch = useDispatch();
+
   const from = moment(event.from).format('DD.MM.YYYY HH:mm');
   const to = moment(event.to).format('DD.MM.YYYY HH:mm');
+
+  const deleteEvent = () => {
+    dispatch(deleteEventsPending(event._id))
+  }
 
   // -------------------------------------------------------------------------------------------------------------------
 
   return (
     <div className='event-card'>
-      <h2 className="event-title">{event.title}</h2>
-      <p className="event-description">{event.description}</p>
-      <p className="event-time">{from}</p>
-      <p className="event-time">{to}</p>
+      <div className="event-card__info">
+        <h2 className="event-card__title">{event.title}</h2>
+        <p className="event-card__description">{event.description}</p>
+        <p className="event-card__time">{from}</p>
+        <p className="event-card__time">{to}</p>
+      </div>
+      <button className="event-card__delete-button" onClick={deleteEvent}>Delete</button>
     </div>
   );
 };

@@ -1,31 +1,39 @@
 import { Action } from 'redux-actions';
 import { createTypedHandler, handleTypedActions } from 'redux-actions-ts';
 import { IEvent } from '../types/events.types';
-import { getEventsSuccess, postEventsSuccess } from '../actions/events.actions';
+import { getEventsSuccess, postEventsSuccess, deleteEventsSuccess } from '../actions/events.actions';
 
-export interface IEventBasesState {
+export interface IEventState {
   collection: IEvent[];
 }
 
-const initialState: IEventBasesState = {
+const initialState: IEventState = {
   collection: []
 };
 
 const eventsReducer = handleTypedActions(
   [
     /** Get Events */
-    createTypedHandler(getEventsSuccess, (state: IEventBasesState, action: Action<IEvent[]>): IEventBasesState => {
+    createTypedHandler(getEventsSuccess, (state: IEventState, action: Action<IEvent[]>): IEventState => {
       return {
       ...state,
         collection: action.payload
       };
     }),
     /** Post Events */
-    createTypedHandler(postEventsSuccess, (state: IEventBasesState, action: Action<IEvent>): IEventBasesState => {
+    createTypedHandler(postEventsSuccess, (state: IEventState, action: Action<IEvent>): IEventState => {
 
       return {
       ...state,
         collection: [...state.collection, action.payload]
+      };
+    }),
+    /** Delete Events */
+    createTypedHandler(deleteEventsSuccess, (state: IEventState, action: Action<string>): IEventState => {
+
+      return {
+      ...state,
+        collection: state.collection.filter(({ _id }: IEvent) => _id !== action.payload)
       };
     }),
   ],
