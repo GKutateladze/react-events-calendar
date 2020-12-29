@@ -1,11 +1,11 @@
 import React from 'react';
 import './EventCard.css';
-import { IEvent } from '../../../_store/types/events.types';
+import { IEventBase } from '../../../_store/types/events.types';
 import moment from 'moment';
 
 
 interface IProps {
-    event: IEvent
+    event: IEventBase
 }
 
 const EventCard: React.FC<IProps> = ({event}: IProps) => {
