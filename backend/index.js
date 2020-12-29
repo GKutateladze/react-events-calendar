@@ -28,5 +28,5 @@ app.post('/events', postEvents);
 app.delete('/events', deleteEvents);
 
 app.get('*', (_, res) => {
-    res.sendFile(__dirname + '../build/index.html')
+    res.sendFile(__dirname + '/build/index.html')
 })

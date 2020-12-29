@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './_store';
+import intercept from './api/interceptor';
+
+intercept();
 
 ReactDOM.render(
   <Provider store={store}>
