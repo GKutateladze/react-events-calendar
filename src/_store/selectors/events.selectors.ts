@@ -5,9 +5,9 @@ import moment, { Moment } from 'moment';
 
 export const eventsSelector = createSelector(
   (store: IStore) => store.events.collection,
-  (events: IEvent[]) =>
+  (store: IStore) => store.events.counter,
+  (events: IEvent[], counter: number) =>
     events.filter((e: IEvent) => {
-      const counter = 0;
       const eventStart: Moment = moment(e.from);
       const eventEnd: Moment = moment(e.to);
       const dayStart: Moment = moment().add(counter, 'days').startOf('day');
@@ -16,7 +16,6 @@ export const eventsSelector = createSelector(
       const finishedBefore = eventEnd < dayStart;
       return !finishedBefore && !startedAfter
     }).map((e: IEvent) => {
-      const counter = 0;
       const eventStart: Moment = moment(e.from);
       const eventEnd: Moment = moment(e.to);
       const dayStart: Moment = moment().add(counter, 'days').startOf('day');

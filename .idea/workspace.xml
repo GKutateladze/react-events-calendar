@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f9e714-8a06-43c4-9b8a-be9baf3ef47d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_store/selectors/events.selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_store/types/events.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/types/events.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventCard/EventCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_store/actions/events.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/actions/events.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_store/reducers/events.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/reducers/events.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_store/selectors/events.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/selectors/events.selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +30,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1mNFD0k2miFtNf06yLM2ePj002e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -92,8 +102,26 @@
       <option name="project" value="LOCAL" />
       <updated>1609261096110</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Basic event calendar">
+      <created>1609274655512</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609274655513</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85f9e714-8a06-43c4-9b8a-be9baf3ef47d" name="Default Changelist" comment="" />
+      <created>1609326022961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609326022961</updated>
+      <workItem from="1609326026625" duration="4333000" />
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="oldMeFiltersMigrated" value="true" />
@@ -103,24 +131,25 @@
     <MESSAGE value="Serve Static" />
     <MESSAGE value="Environment" />
     <MESSAGE value="Static" />
-    <option name="LAST_COMMIT_MESSAGE" value="Static" />
+    <MESSAGE value="Basic event calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic event calendar" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1609261095959">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1609274655262">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="297" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609261095959" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609261097809">
+    <state x="297" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609274655262" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609274659067">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609261097809" />
-    <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609266822105">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609274659067" />
+    <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609327580474">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1609266822105" />
-    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1609267919464">
+    <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1609327580474" />
+    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1609328248453">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1609267919464" />
+    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1609328248453" />
   </component>
 </project>

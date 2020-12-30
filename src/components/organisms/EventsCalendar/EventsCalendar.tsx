@@ -2,9 +2,10 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import './EventsCalendar.css';
 import { IEvent } from '../../../_store/types/events.types';
 import moment from 'moment';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { deleteEventsPending } from '../../../_store/actions/events.actions';
-
+import { IStore } from '../../../_store';
+import { ReactComponent as Trash } from '../../../assets/icons/trash.svg';
 
 interface IProps {
     events: IEvent[]
@@ -13,13 +14,13 @@ interface IProps {
 const EventsCalendar: React.FC<IProps> = ({events}: IProps) => {
 
   const dispatch = useDispatch();
-  const counter: number = 0;
+  const counter: number = useSelector((store: IStore) => store.events.counter);
 
   // -------------------------------------------------------------------------------------------------------------------
 
   const tenMinuteWidth = 40;
-  const oneMinuteWidth = 40 / 10;
-  const hoursColumnWidth = 40 * 6;
+  const oneMinuteWidth = tenMinuteWidth / 10;
+  const hoursColumnWidth = tenMinuteWidth * 6;
 
   const hoursArray: number[] = [];
   for (let i = 0; i < 24; i++) {
@@ -46,7 +47,7 @@ const EventsCalendar: React.FC<IProps> = ({events}: IProps) => {
   })
 
   // -------------------------------------------------------------------------------------------------------------------
-  const rowHeight = 35;
+  const rowHeight = 20;
 
   const getColumns = (events: IEvent[]) => {
     const result = [[]];
@@ -208,15 +209,9 @@ const EventsCalendar: React.FC<IProps> = ({events}: IProps) => {
         top: `${verticalShift}px`,
       }}>
         <div>
-          <div className={`event-item ${eventWidth < 180 ? 'event-item--short' : ''} ${startPointClass ? 'event-item--start-threshold' : ''} ${endPointClass ? 'event-item--end-threshold' : ''}`}>
+          <div className={`event-item ${startPointClass ? 'event-item--start-threshold' : ''} ${endPointClass ? 'event-item--end-threshold' : ''}`}>
             <div className="event-item__header">
-              <span className="event-item__logo">{}</span>
-              <span className="event-item__description">{event.title}</span>
-              <button className="event-card__delete-button" onClick={deleteEvent}>Delete</button>
-            </div>
-            <div className="event-item__footer">
-              <span className="event-item__logo">{}</span>
-              <span className="event-item__description">{event.description}</span>
+              <span className="event-item__description"><Trash className="event-item__delete" onClick={deleteEvent}/><span className="event-item__title">{event.title}</span>{event.description}</span>
             </div>
             <span className="event-item__start-date">{startPointText}</span>
           </div>

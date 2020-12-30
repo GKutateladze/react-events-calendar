@@ -1,0 +1,45 @@
+.event-form {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-list {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+}
+
+.icon-item {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.icon-link {
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    color: #b6bbc5;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow:
+            1rem 1rem 2rem rgba(0,0,0,.1),
+            -1rem -1rem 2rem rgba(255,255,255,.5);
+}
+
+.icon-link p {
+    margin: auto;
+}
+
+.icon-link:hover {
+    transition: 0.3s;
+    color: teal;
+    box-shadow:
+            inset 1rem 1rem 2rem rgba(0,0,0,.1),
+            inset -1rem -1rem 2rem rgba(255,255,255,.5);
+}

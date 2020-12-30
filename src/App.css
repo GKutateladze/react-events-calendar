@@ -1,12 +1,8 @@
+body {
+    background-color: #dae1eb;
+}
+
 .App {
     padding: 15px;
-}
 
-.event-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.align-container {
-    display: flex;
 }

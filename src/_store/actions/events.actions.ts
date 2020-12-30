@@ -11,3 +11,6 @@ export const postEventsSuccess = createTypedAction<IEvent>('[Success] Post Event
 
 export const deleteEventsPending = createTypedAction<string>('[Pending] Delete Events');
 export const deleteEventsSuccess = createTypedAction<string>('[Success] Delete Events');
+
+
+export const setCounter = createTypedAction<number>('Set Counter');
