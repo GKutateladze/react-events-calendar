@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f9e714-8a06-43c4-9b8a-be9baf3ef47d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_store/actions/events.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/actions/events.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_store/reducers/events.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/reducers/events.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_store/selectors/events.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/selectors/events.selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/trash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/trash.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,7 +1,7 @@
 .events-calendar__scroll-container {
     max-width: 100%;
     overflow-x: auto;
-    background-color: #dae1eb;
+    background-color: #eeeeee;
     overscroll-behavior-x: contain;
     display: flex;
     position: relative;
@@ -11,7 +11,7 @@
 .hour-column {
     position: relative;
     display: flex;
-    border-left: 1px solid #b6bbc5;
+    border-left: 1px solid #686d76;
     z-index: 6;
 }
 
@@ -20,7 +20,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.5);
+    color: #686d76;
     user-select: none;
 }
 
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     padding-top: 1px;
-    border-right: 1px solid #b6bbc5;
+    border-right: 1px solid lightgrey;
 }
 
 .event-calendar__unavailable-time {
@@ -38,7 +38,7 @@
     left: 1px;
     z-index: 4;
     height: 18px;
-    background-color: #FFCEC9;
+    background-color: #fbdcc4;
 }
 
 .event-item__wrapper {
@@ -51,8 +51,8 @@
 .event-item {
     min-width: 20px;
     height: 30px;
-    background-color: #dae1eb;
-    color: #b6bbc5;
+    background-color: white;
+    color: #212121;
     box-shadow: 0 2px 4px rgba(2, 13, 76, 0.36);
     border-radius: 4px;
     cursor: pointer;
@@ -61,26 +61,11 @@
     align-items: center;
 }
 
-.eta-opacity-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #F4F6F9;
-    opacity: 0.6;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
 .event-item__header {
     display: flex;
     align-items: center;
     overflow-x: hidden;
     white-space: nowrap;
-}
-
-.event-item:hover {
-    color: teal;
 }
 
 .event-item__title {
@@ -115,7 +100,7 @@
     z-index: 10;
     width: 2px;
     height: 100%;
-    background-color: teal;
+    background-color: #30475e;
 }
 
 .event-calendar__current-time-text {
@@ -126,10 +111,10 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    color: teal;
+    color: #dddddd;
     width: 49px;
     height: 18px;
-    background-color: lightblue;
+    background-color: #30475e;
     text-align: center;
     cursor: pointer;
     user-select: none;

@@ -38,7 +38,7 @@
 
 .icon-link:hover {
     transition: 0.3s;
-    color: teal;
+    color: #30475e;
     box-shadow:
             inset 1rem 1rem 2rem rgba(0,0,0,.1),
             inset -1rem -1rem 2rem rgba(255,255,255,.5);
