@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85f9e714-8a06-43c4-9b8a-be9baf3ef47d" name="Default Changelist" comment="">
+    <list default="true" id="85f9e714-8a06-43c4-9b8a-be9baf3ef47d" name="Default Changelist" comment="Styles">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_store/effects/events.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/_store/effects/events.effects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/EventForm/EventForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/AsideForm/AsideForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/AsideForm/AsideForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/EventsCalendar/EventsCalendar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,14 @@
       <updated>1609326022961</updated>
       <workItem from="1609326026625" duration="4333000" />
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Styles">
+      <created>1609853607270</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609853607270</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,24 +136,25 @@
     <MESSAGE value="Environment" />
     <MESSAGE value="Static" />
     <MESSAGE value="Basic event calendar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic event calendar" />
+    <MESSAGE value="Styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styles" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1609274655262">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1609857522847">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="297" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609274655262" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609274659067">
+    <state x="297" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609857522847" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609853612619">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609274659067" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609853612619" />
     <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609853222117">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="343" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1609853222117" />
-    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1609328248453">
+    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1609854918410">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1609328248453" />
+    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1609854918410" />
   </component>
 </project>

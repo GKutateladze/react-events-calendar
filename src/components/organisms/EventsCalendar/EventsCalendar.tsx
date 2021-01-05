@@ -47,7 +47,7 @@ const EventsCalendar: React.FC<IProps> = ({events}: IProps) => {
   })
 
   // -------------------------------------------------------------------------------------------------------------------
-  const rowHeight = 20;
+  const rowHeight = 23;
 
   const getColumns = (events: IEvent[]) => {
     const result = [[]];

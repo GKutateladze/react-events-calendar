@@ -10,3 +10,8 @@
     margin-right: 16px;
     width: 82px;
 }
+
+.rf-button--primary.rf--accent:hover:hover {
+    background-color: var(--accent-500);
+    color: white;
+}

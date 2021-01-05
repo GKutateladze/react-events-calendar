@@ -2,9 +2,16 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--base-200);
+    box-shadow: -1px 0 20px 1px #3b3e56;;
     z-index: 100;
     padding: 24px;
+}
+
+.aside-form .react-date-picker__inputGroup,
+.aside-form input,
+.aside-form textarea {
+    background-color: var(--base-200);
 }
 
 .form-group {
@@ -29,10 +36,20 @@
     left: -66px;
     transition: 0.3s;
     transition-delay: 0.52s;
-
+    background-color: var(--accent-500);
+    color: white;
     font-size: 24px;
+}
+
+.aside__button:hover {
+    background-color: var(--accent-500);
+    color: white;
 }
 
 .aside__button--rotate {
     transform: rotate(-45deg);
+}
+
+.rf-form-group__label {
+    font-size: 14px;
 }

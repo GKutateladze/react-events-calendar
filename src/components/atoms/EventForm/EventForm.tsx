@@ -27,7 +27,6 @@ const EventForm: React.FC<IProps> = () => {
         <Button className='event-form__button' size='small' onClick={ () => handleCounter(-1) }>Previous</Button>
         <Button className='event-form__button' size='small' onClick={ () => handleCounter(1) }>Next</Button>
         <Button className='event-form__button' size='small' onClick={ () => handleCounter(0) } disabled={counter === 0}>Today</Button>
-
     </div>
   );
 };

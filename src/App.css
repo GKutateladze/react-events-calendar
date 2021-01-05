@@ -1,10 +1,16 @@
+:root {
+    --accent-500: #2488e3;
+}
+
 body {
     background-color: white;
+    font-family: Roboto, serif;
 }
 
 .App {
     display: flex;
     height: 100%;
+    background: linear-gradient(45deg, #1f2634, #565f7a);
 }
 
 .calendar {

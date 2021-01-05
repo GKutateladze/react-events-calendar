@@ -2,7 +2,7 @@
     max-width: 100%;
     min-height: calc(100% - 50px);
     overflow-x: auto;
-    background-color: #eeeeee;
+    background: linear-gradient(45deg, #171929, #292c43);
     overscroll-behavior-x: contain;
     display: flex;
     position: relative;
@@ -11,7 +11,7 @@
 .hour-column {
     position: relative;
     display: flex;
-    border-left: 1px solid #686d76;
+    border-left: 1px solid #8b9d9a50;
     z-index: 6;
 }
 
@@ -20,7 +20,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    color: #686d76;
+    color: #8b9d9a;
     user-select: none;
 }
 
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     padding-top: 1px;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid #8b9d9a20;
 }
 
 .event-calendar__unavailable-time {
@@ -38,7 +38,7 @@
     left: 1px;
     z-index: 4;
     height: 18px;
-    background-color: #fbdcc4;
+    border-top: 1px solid darkred;
 }
 
 .event-item__wrapper {
@@ -51,9 +51,11 @@
 .event-item {
     min-width: 20px;
     height: 30px;
-    background-color: white;
-    color: #212121;
-    box-shadow: 0 2px 4px rgba(2, 13, 76, 0.36);
+    background-color: var(--base-600);
+    color: #8b9d9a;
+    box-shadow:
+            -1px 0 5px 2px var(--accent-500),        /* outer left magenta */
+            1px 0 5px 2px var(--accent-500);         /* outer right cyan */
     border-radius: 4px;
     cursor: pointer;
     position: relative;
@@ -80,7 +82,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.5);
+    color: #8b9d9a;
 }
 
 .event-item--start-threshold {
@@ -100,7 +102,7 @@
     z-index: 10;
     width: 2px;
     height: 100%;
-    background-color: #30475e;
+    background-color: darkred;
 }
 
 .event-calendar__current-time-text {
@@ -114,7 +116,7 @@
     color: #dddddd;
     width: 49px;
     height: 18px;
-    background-color: #30475e;
+    background-color: darkred;
     text-align: center;
     cursor: pointer;
     user-select: none;
@@ -122,5 +124,9 @@
 
 .event-item__delete {
     margin-left: 4px;
+}
+
+.event-item__delete path {
+    fill: #8b9d9a;
 }
 
