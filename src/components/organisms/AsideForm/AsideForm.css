@@ -37,13 +37,13 @@
     transition: 0.3s;
     transition-delay: 0.52s;
     background-color: var(--accent-500);
-    color: white;
+    color: var(--base-200);
     font-size: 24px;
 }
 
 .aside__button:hover {
     background-color: var(--accent-500);
-    color: white;
+    color: var(--base-200);
 }
 
 .aside__button--rotate {

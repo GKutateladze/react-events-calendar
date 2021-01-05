@@ -13,5 +13,10 @@
 
 .rf-button--primary.rf--accent:hover:hover {
     background-color: var(--accent-500);
-    color: white;
+    color: var(--base-200);
+}
+
+.event-form__date {
+    color: var(--base-200);
+    margin-right: 16px;
 }
