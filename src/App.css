@@ -3,6 +3,31 @@ body {
 }
 
 .App {
-    padding: 15px;
+    display: flex;
+    height: 100%;
+}
 
+.calendar {
+    max-width: 100%;
+    padding-top: 16px;
+}
+
+.calendar--width {
+    max-width: 100%;
+}
+
+.custom-form {
+    width: 350px;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    transform: translateX(350px);
+    transition: 0.5s;
+}
+
+.custom-form--appear {
+    transform: translateX(0);
+    width: 350px;
 }

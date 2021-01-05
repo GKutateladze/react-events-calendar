@@ -1,0 +1,38 @@
+.aside-form {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 100;
+    padding: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-footer {
+    margin-top: 40px;
+}
+
+.form-button {
+    margin-right: 20px;
+}
+
+.form-button:last-of-type {
+    margin-right: 0;
+}
+
+.aside__button {
+    position: absolute;
+    top: 13px;
+    left: -66px;
+    transition: 0.3s;
+    transition-delay: 0.52s;
+
+    font-size: 24px;
+}
+
+.aside__button--rotate {
+    transform: rotate(-45deg);
+}

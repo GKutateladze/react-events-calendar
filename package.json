@@ -26,9 +26,11 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-observable": "^1.2.0",
     "reselect": "^4.0.0",
+    "root-front": "^1.8.3",
     "rxjs": "^6.6.3",
     "ts-node": "^9.1.1",
     "typescript": "^4.0.3",
+    "use-reactive-form": "^1.1.6",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

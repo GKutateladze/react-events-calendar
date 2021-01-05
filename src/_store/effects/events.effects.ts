@@ -5,6 +5,7 @@ import { showErrorMessage } from '../_commonActions/error.actions';
 import { IEvent, IEventBase } from '../types/events.types';
 import { getEvents, postEvents, deleteEvents } from '../services/events.services';
 import { getEventsPending, getEventsSuccess, postEventsPending, postEventsSuccess, deleteEventsPending, deleteEventsSuccess } from '../actions/events.actions';
+import { sendNotification } from 'root-front';
 
 /** Get Events */
 export const getEventsEffect$ = (actions$: ActionsObservable<Action<void>>) =>
@@ -25,7 +26,13 @@ export const postEventsEffect$ = (actions$: ActionsObservable<Action<IEventBase>
     ofType(postEventsPending.toString()),
     switchMap(({ payload }) =>
       postEvents(payload).pipe(
-        map((result: IEvent) => postEventsSuccess(result)),
+        map((result: IEvent) => {
+          sendNotification({
+            message: 'Event has been added',
+            variant: 'success'
+          })
+          return postEventsSuccess(result)
+        }),
         catchError(showErrorMessage)
       )
     )
